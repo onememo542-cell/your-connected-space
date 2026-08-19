@@ -2,6 +2,7 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import { Link } from "@tanstack/react-router";
 import { ArrowRight, Sparkles, X } from "lucide-react";
 import { useI18n } from "@/lib/i18n";
+import { LottieIcon } from "@/components/ui/LottieIcon";
 
 const STORAGE_KEY = "welcome-modal-seen";
 const DELAY_MS = 10_000;
@@ -91,62 +92,48 @@ export function WelcomeModal() {
         </button>
 
         <div className="relative">
+          <LottieIcon
+            src="/lottie/welcome-hello.lottie"
+            className="mx-auto mb-1 h-32 w-40"
+            fallback={<Sparkles className="mx-auto h-10 w-10 text-accent" />}
+          />
+
           <span className="chip mx-auto">
             <Sparkles className="h-3.5 w-3.5" />
             {tr("welcome.eyebrow")}
           </span>
 
-          <h2
-            id="welcome-modal-title"
-            className="mt-5 text-3xl font-black leading-tight tracking-tight text-foreground sm:text-4xl"
-          >
+          <h2 id="welcome-modal-title" className="mt-5 type-h2 text-foreground">
             {tr("welcome.title")}
           </h2>
 
-          <p
-            id="welcome-modal-body"
-            className="mt-4 text-base leading-relaxed text-muted-foreground"
-          >
+          <p id="welcome-modal-body" className="mt-4 type-lead text-muted-foreground">
             {tr("welcome.body")}
           </p>
 
-          <p className="mt-4 text-sm font-semibold text-accent">
-            {tr("welcome.highlight")}
-          </p>
+          <p className="mt-4 type-body-strong text-accent">{tr("welcome.highlight")}</p>
 
-          <div className="mt-8 grid grid-cols-1 gap-3 sm:grid-cols-2">
+          <div className="mt-8 grid grid-cols-1 gap-3">
             <Link
               to="/contact"
               onClick={close}
-              className="btn-accent min-h-[5.5rem] flex-col gap-1 py-4 text-sm leading-tight"
+              className="btn-accent w-full items-center justify-center gap-2 whitespace-nowrap py-4 type-body-sm"
             >
-              {tr("welcome.primary")
-                .split(" ")
-                .map((word) => (
-                  <span key={word}>{word}</span>
-                ))}
-              <ArrowRight className="mt-1 h-4 w-4 rtl:rotate-180" />
+              {tr("welcome.primary")}
+              <ArrowRight className="h-4 w-4 rtl:rotate-180" />
             </Link>
             <Link
               to="/projects"
               onClick={close}
-              className="btn-accent-outline min-h-[5.5rem] flex-col gap-1 py-4 text-sm leading-tight"
+              className="btn-accent-outline w-full items-center justify-center gap-2 whitespace-nowrap py-4 type-body-sm"
             >
-              {tr("welcome.secondary")
-                .split(" ")
-                .map((word) => (
-                  <span key={word}>{word}</span>
-                ))}
+              {tr("welcome.secondary")}
             </Link>
           </div>
 
-          <p className="eyebrow mt-6 text-muted-foreground">
-            {tr("welcome.footnote")}
-          </p>
+          <p className="eyebrow mt-6 text-muted-foreground">{tr("welcome.footnote")}</p>
         </div>
       </div>
     </div>
   );
 }
-
-export default WelcomeModal;
