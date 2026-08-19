@@ -1,12 +1,12 @@
-# Your Connected Space
+# Profile Refiner
 
-clone this https://lovable.dev/invite/M699D24
+clone this https://github.com/amin3said66-prog/refined-bazaar when from have i need split Skills,Experience,Contact to pages and more related inner when from home or about have shorten and focus points not have duplictae from pages have
 
 This project was built with [Lovable](https://lovable.dev).
 
 ## Build with Lovable
 
-Continue developing this project in the [Lovable editor](https://lovable.dev/projects/da9ff59a-c9ce-4a8d-80b7-2ac40b0934cf).
+Continue developing this project in the [Lovable editor](https://lovable.dev/projects/5c0d02ef-3482-450d-ba88-673ae8ca8803).
 
 - **Ship faster**: describe what you want to build and Lovable handles the code.
 - **Stay in sync**: every change made in Lovable is committed straight to this repository.
