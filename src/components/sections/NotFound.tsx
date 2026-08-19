@@ -67,7 +67,7 @@ export function NotFound() {
       contained={false}
       padded={false}
       mainRef={ref}
-      className="section-shell nav-offset relative flex flex-col items-center justify-center overflow-hidden pb-12"
+      className="section-shell nav-offset relative flex flex-col items-center justify-center overflow-hidden"
     >
       {/* ambient layer */}
       <div aria-hidden className="pointer-events-none absolute inset-0">

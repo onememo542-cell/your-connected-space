@@ -120,7 +120,7 @@ export function Footer() {
   return (
     <footer className="w-full text-foreground select-none overflow-hidden">
       {/* Main Footer Container */}
-      <div className="section-shell pt-1 pb-10">
+      <div className="section-shell pb-10">
         <div className="container-page">
           {/* Inner Card Panel */}
           <div className="relative rounded-2xl bg-card p-8 sm:p-10 md:p-14 border border-border shadow-glow mb-8 md:mb-12 overflow-hidden">
