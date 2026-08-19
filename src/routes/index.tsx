@@ -9,7 +9,7 @@ import { CredentialsCarousel } from "@/components/credentials/CredentialsCarouse
 import { ContactCta } from "@/components/sections/home/ContactCta";
 import { pageSeo } from "@/lib/seo";
 import { SITE, absoluteUrl } from "@/lib/site";
-import heroIsoAvif from "@/assets/hero-iso.avif";
+const heroIsoAvif = "/images/hero-iso.avif";
 
 const DESCRIPTION =
   "Portfolio of Mostafa Samir, Senior Full Stack Engineer specializing in .NET 8 microservices, React.js and Angular platforms.";

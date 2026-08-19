@@ -1,6 +1,6 @@
 import { Download, Play, Trophy } from "lucide-react";
-import heroIso from "@/assets/hero-iso.webp";
-import heroIsoAvif from "@/assets/hero-iso.avif";
+const heroIso = "/images/hero-iso.webp";
+const heroIsoAvif = "/images/hero-iso.avif";
 import { useI18n } from "@/lib/i18n";
 
 export function Hero() {
