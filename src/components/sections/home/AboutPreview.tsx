@@ -1,7 +1,7 @@
 import { ArrowRight } from "lucide-react";
 import { Link } from "@tanstack/react-router";
-import portraitWebp from "@/assets/portrait-cutout.webp";
-import portraitAvif from "@/assets/portrait-cutout.avif";
+const portraitWebp = "/images/portrait-cutout.webp";
+const portraitAvif = "/images/portrait-cutout.avif";
 import { PenTyping } from "@/components/ui/PenTyping";
 
 export function AboutPreview() {
